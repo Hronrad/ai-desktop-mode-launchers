@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+for candidate in python3 python3.14 python3.13 python3.12 python3.11; do
+  if command -v "$candidate" >/dev/null && "$candidate" -c 'import tomllib' 2>/dev/null; then
+    exec "$candidate" "$(cd "$(dirname "$0")" && pwd)/launcher.py" claude "$@"
+  fi
+done
+echo '需要 Python 3.11+，请先安装并加入 PATH' >&2
+exit 1

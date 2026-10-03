@@ -1,0 +1,24 @@
+{
+  "codex": {
+    "app": "/Applications/Codex.app",
+    "home": "~/.codex",
+    "api_base_url": "",
+    "api_key": "",
+    "api_model": "",
+    "account_model": "",
+    "api_proxy": "",
+    "account_proxy": "",
+    "ca_certificate": "",
+    "sync_thread_provider": false
+  },
+  "claude": {
+    "app": "/Applications/Claude.app",
+    "api_base_url": "",
+    "api_key": "",
+    "models": [],
+    "auth_scheme": "x-api-key",
+    "api_proxy": "",
+    "account_proxy": "",
+    "cowork_egress_allowed_hosts": []
+  }
+}

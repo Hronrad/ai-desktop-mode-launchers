@@ -1,0 +1,10 @@
+config.json
+*.local.json
+.env
+*.pem
+*.key
+*.log
+*.sqlite*
+*.bak*
+__pycache__/
+.DS_Store
